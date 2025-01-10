@@ -2,33 +2,33 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "C/C++: g++ build active file",
             "type": "shell",
-            "command": "/usr/bin/g++",
+            "command": "/usr/bin/g++ -std=c++11 -g /workspaces/fabioevtc/App/programa.cpp -o /workspaces/fabioevtc/App/programa",
             "args": [
-                "-fdiagnostics-color=always",
                 "-g",
-                "/workspaces/fabioevtc/App/programa.cpp",
+                "${file}",
                 "-o",
-                "/workspaces/fabioevtc/App/programa",
-                "-I/usr/include/openssl",
-                "-L/usr/lib",
-                "-lssl",
-                "-lcrypto",
-                "-lstdc++"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-lcryptopp"
             ],
-            "group": "build"
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Generated task by Debugger."
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: g++-9 build active file",
-            "command": "/usr/bin/g++-9",
+            "label": "C/C++: gcc build active file",
+            "command": "/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                ""
             ],
             "options": {
                 "cwd": "${fileDirname}"
