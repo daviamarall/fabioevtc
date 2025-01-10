@@ -1,7 +1,5 @@
 # Etapa de Desenvolvimento
 
-Obrigada por estar conosco nesse processo! Abaixo, apresentamos alguns exercícios que gostaríamos que você desenvolvesse nesta etapa:
-
 ---
 
 ## 1. Criptografia e Descriptografia com 3DES
