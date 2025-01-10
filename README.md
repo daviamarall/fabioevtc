@@ -1,7 +1,5 @@
 # Etapa de Desenvolvimento
 
----
-
 ## 1. Criptografia e Descriptografia com 3DES
 
 **Objetivo**:  
